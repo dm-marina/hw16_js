@@ -1,9 +1,7 @@
-// const arr = [1, 2, 3, -1, -2, -3];
-function funcArr(arr=[1, 2, 3, -1, -2, -3]){
-    // const arr = [1, 2, 3, -1, -2, -3];
-    let sign;
+const arr = [1, 2, 3, -1, -2, -3];
+function funcArr(arr){
     const arr2=[];
-    if(arr=== null){
+    if(!arr){
         return 'The array with name "arr" is empty'
     }
     for(let i=0; i<arr.length; i++){
@@ -13,8 +11,7 @@ function funcArr(arr=[1, 2, 3, -1, -2, -3]){
     }
     if(arr2!==0){
         return arr2
-    } else{
+    } 
         return 'NULL'
-    }
 }
-console.log(funcArr())
+console.log(funcArr(arr));
